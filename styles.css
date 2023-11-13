@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+p {
+    color: rgb(27, 27, 27);
+  }
+
+a {
+  color: rgb(27, 27, 27);
+  text-decoration: none;
+  font-weight: normal;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: rgb(253, 160, 38);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(0, 0, 0);
+}
+main{
+  padding: 50px;
+}
+/* Examples Gird */
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(247, 222, 110);
+}
+
+.grid-item img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #00000020;
+  border-radius: 13px;
+  box-shadow: 4px 7px 7px 0px #00000042;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.grid-item:hover img {
+  transform: scale(1.1);
+
+}
+
+
+
+/* Examples Grid */
+
+
+
+.container {
+    text-align: center;
+    /* margin: 2rem; */
+    padding-top: 100px;
+    
+}
+
+.qr-code-container{
+    display: none;
+}
+.input-container {
+    margin: 1rem;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 20px;
+    margin: 0.5rem;
+}
+
+input[type="number"], input[type="color"]{
+    
+    margin: 1rem;
+
+}
+
+button {
+    font-size: 18px;
+    
+    padding: 0.5rem 1rem;
+    color: rgb(255, 247, 247);
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(102, 38, 253);
+}
+button:hover {
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  border: 1px solid rgba(51, 51, 51, 0.096);
+  color: rgb(102, 38, 253);
+  background-color: rgb(255, 255, 255);
+}
+
+.qr-code-container {
+    margin: 2rem;
+    
+}
+#qr-code{
+    padding: 3%;
+    border: 2px solid #000;
+}
+img{
+    border-radius: 20px;
+}
+.customization-options {
+    margin: 2rem;
+}
+
+.content{
+    padding: 50px;
+}
+
+.list{
+  padding: 0px 50px;
+}
+
+
+/* Ham burger Test */
+/* header */
+
+.header {
+  background-color: rgba(red, green, blue, 0.5);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  backdrop-filter: blur(8px);
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f428;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 18px 20px 10px 30px;
+  width: 140px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 260px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* Accordion Faqs */
+.accordion {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.accordion-title {
+  background-color: #f1f1f1;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  right: 10px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+.accordion-content p{
+  color: #737280;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+footer{
+  text-align: center;
+}
+main h1{
+  padding-top: 100px;
+}

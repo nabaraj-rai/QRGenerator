@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontyweb - Creative QR Code Generator</title>
+  <meta name="description"
+    content="Frontyweb’s QR Code Generator is a utility tool specially made targeting the artists allowing them to share their artworks easier and faster way with the help QR Code.">
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="styles.min.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="/"><img src="/img/logo.webp" class="logo" alt="frontyweb."></img></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="/about">About</a></li>
+      <li><a href="/privacy-policy">Privacy Policy</a></li>
+      <li><a href="/terms-condition">Terms & Condition</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="container">
+    <h1>Creative QR Code Generator</h1>
+    <div class="input-container">
+      <label for="url-input">Enter Your URL:</label><br>
+      <input type="text" id="url-input" placeholder="https://www.example.com/"><br>
+      <button id="generate-button">Generate</button>
+    </div>
+
+    <div class="qr-code-container" id="resultQr">
+      <h2>Your QR Code:</h2>
+      <img id="qr-code" src="" alt="QR Code">
+    </div>
+
+    <div class="customization-options">
+      <h2>Customization Options</h2><br>
+      <label for="color-input">Foreground:</label>
+      <input type="color" id="color-input">
+      <label for="background-input">Background :</label>
+      <input type="color" id="background-input" value="#ffffff">
+      <label for="size-input">Size:</label>
+      <input type="number" id="size-input" min="100" max="500" value="200">
+    </div>
+
+  </div>
+  <div class="content">
+    <h2>Our Introduction</h2>
+    <p>Frontyweb’s QR Code Generator is a utility tool specially made targeting the artists allowing them to share their
+      artworks easier and faster way with the help QR Code. </p>
+    <br>
+
+    <h2>How to use the tool?</h2>
+    <ol class="list">
+      <li>Copy your artwork’s URL.</li>
+      <li>Paste it in the field above</li>
+      <li>Choose Foreground Color and Background Color as per your preference.</li>
+      <li>Choose your QR Code’s required size ranging from 100 to 500.</li>
+      <li>Click on Generate button.</li>
+      <li>Your QR Code will be available.</li>
+      <li>Then you can download it.</li>
+    </ol>
+    <br>
+    <h2>Benefits of Our QR Codes for Artists</h2>
+    <ul class="list">
+      <li>Artists can showcase their portfolio seamlessly by having their QR code linked to an online gallery or
+        portfolio, allowing potential clients or admirers to access their work effortlessly.</li>
+      <li>Artists can use the QR code at events, exhibitions, or social gatherings to quickly connect with fellow
+        artists, gallery owners, or art enthusiasts, facilitating networking opportunities.</li>
+      <li>Implement QR codes as a secure method for authenticating and verifying the origin of artwork, providing buyers
+        with confidence in the legitimacy of their purchase.</li>
+      <li>Connect the QR code to social media profiles, allowing people to follow and engage with the artist on various
+        platforms, expanding their online presence and audience.</li>
+      <li>Artists can use QR codes on promotional materials for upcoming exhibitions or art events, directing interested
+        individuals to event details, ticket purchases, or additional artist information.</li>
+
+    </ul>
+    <br>
+    <h2>Examples</h2><br>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="img/example1.webp" alt="Image 1">
+      </div>
+      <div class="grid-item">
+        <img src="img/example2.webp" alt="Image 2">
+      </div>
+      <div class="grid-item">
+        <img src="img/example3.webp" alt="Image 3">
+      </div>
+    </div><br>
+
+    <h2>Tips & Best Practices</h2>
+    <ul class="list">
+      <li>Generate QR Code for your desired URL & Download it.</li>
+      <li>Your downloaded QR code comes with Background so if it matches with your Design use it as it is.</li>
+      <li>But if you don't want background just remove it with the help of background remover tool. <br>
+        (*We are currently working on the feature for removing the background too until then please keep your patience
+        and use the best tool suited for you.)
+      </li>
+      <li>After removing background you may recolor it and design it as per your needs and aesthetic.</li>
+    </ul><br>
+    <h2>FAQs</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-title">
+          1. How does FrontyWeb benefit artists?<span class="arrow">&#9660;</span>
+        </div>
+        <div class="accordion-content">
+          <p>FrontyWeb empowers artists by providing a seamless platform to generate customized QR codes. These QR codes
+            can be used for portfolio showcasing, networking, event promotions, and more.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">2. Can I customize the appearance of my QR codes?<span class="arrow">&#9660;</span>
+        </div>
+        <div class="accordion-content">
+          <p>Yes, FrontyWeb offers various customization options. You can choose colors, integrate logos, and select
+            different styles to align the QR codes with your artistic brand.</p>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <div class="accordion-title">
+          3. How do I use FrontyWeb to create a QR code for my art portfolio?<span class="arrow">&#9660;</span>
+        </div>
+        <div class="accordion-content">
+          <p>Simply visit FrontyWeb, select the appropriate option for a portfolio QR code, and follow the step-by-step
+            instructions to customize and generate your unique QR code.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">
+          4. Are there any limitations on the number of QR codes I can generate?<span class="arrow">&#9660;</span>
+        </div>
+        <div class="accordion-content">
+          <p>FrontyWeb offers flexibility. While there's no strict limit on the number of QR codes you can generate,
+            it's advisable to check our pricing or subscription plans for any specific guidelines regarding usage.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-title">
+          5. Can I use FrontyWeb QR codes for event promotions and networking?<span class="arrow">&#9660;</span>
+        </div>
+        <div class="accordion-content">
+          <p>Yes, FrontyWeb is an excellent tool for event promotions and networking. Generate QR codes for your events,
+            exhibitions, or social gatherings, and easily connect with fellow artists, gallery owners, and art
+            enthusiasts.</p>
+        </div>
+      </div>
+      <!-- Add more questions and answers as needed -->
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2023 Frontyweb - Creative QR Code Generator. All rights reserved.
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <script src="script.min.js"></script>
+
+</body>
+
+</html>

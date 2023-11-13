@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Frontyweb - Creative QR Code Generator</title>
+    <link rel="stylesheet" type="text/css" href="../styles.min.css">
+    <meta name="description"
+        content="Frontyweb’s QR Code Generator is a utility tool specially made targeting the artists allowing them to share their artworks easier and faster way with the help QR Code.">
+    <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <style>
+        main {
+            background-image: url(/img/background.webp);
+            height: 90vh;
+            background-size: cover;
+            background-position: 20% 0;
+            width: 100%;
+        }
+
+        section {
+            width: 520px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                background-image: none;
+            }
+
+            section {
+                width: 360px;
+            }
+
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="/"><img src="/img/logo.webp" class="logo"></img></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="/about">About</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-condition">Terms & Condition</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <section>
+            <h2>Get in Touch with Frontyweb</h2>
+            <p>If you have any questions, feedback, or inquiries, please feel free to contact us by clicking the link
+                below:</p>
+            <p><button onclick="mail()">Contact Us</button></p>
+        </section>
+
+
+    </main>
+    <footer>
+        &copy; 2023 Frontyweb - Creative QR Code Generator. All rights reserved.
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="../script.min.js"></script>
+
+</body>
+
+</html>
